@@ -628,13 +628,19 @@ section,
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-  }
+.hero h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-left: 10px;
+}
 
-  .hero p {
-    font-size: 20px;
-  }
+.hero p {
+  margin: 5px 0 0 0;
+  margin-bottom: 450px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
 }
 
 /*--------------------------------------------------------------
@@ -669,6 +675,34 @@ section,
 .content{
   padding: 50px;
 }
+
+@media (max-width: 768px) {
+
+  .about{
+    margin-left:-110px;
+    margin-right: -110px;
+    font-size:17px;
+  }
+  .about .content h2 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: -10px;
+  margin-left: -40px;
+  margin-right: -50px;
+}
+.det{
+  margin-left: -40px;
+  font-size: 17px;
+  margin-right: -45px;
+
+}
+.arow{
+  margin-left: -40px;
+  margin-right: -45px;
+  font-size: 17px;
+}
+}
+
 
 
 /*--------------------------------------------------------------
@@ -706,6 +740,14 @@ section,
   height: 10px;
   transition: 0.9s;
   background-color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .skills{
+    margin-left:-110px;
+    margin-right: -110px;
+    font-size:17px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -765,6 +807,16 @@ section,
   top: 0;
   background: var(--background-color);
   border: 2px solid var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .resume{
+    margin-left:-110px;
+    margin-right: -110px;
+    font-size:17px;
+    margin-top: -120px;
+  }
+
 }
 
 /* ====== Expertise Section Styles ====== */
@@ -866,7 +918,10 @@ section,
     gap: 8px;
   }
   .expertise-item{
-    margin: 18px 0 22px;
+    margin: 10px 0 15px;
+  }
+    .expertise-title{
+    font-size: 32px;
   }
 }
 
@@ -882,8 +937,18 @@ section,
 
 @media (max-width: 575px) {
   .contact .info-wrap {
-    padding: 20px;
+    padding: 0px;
   }
+  .contact{
+    margin-left:-110px;
+    margin-right: -110px;
+    font-size:17px;
+    margin-top: -60px;
+  }
+
+  .contact .info-item {
+  margin-top: -20px;
+}
 }
 
 .contact .info-item {
@@ -970,131 +1035,5 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-/*--------------------------------------------------------------
-# Service Details Section
---------------------------------------------------------------*/
-.service-details .services-list {
-  padding: 10px 30px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  margin-bottom: 20px;
-}
-
-.service-details .services-list a {
-  display: block;
-  line-height: 1;
-  padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  margin: 20px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  transition: 0.3s;
-}
-
-.service-details .services-list a.active {
-  color: var(--heading-color);
-  font-weight: 700;
-  border-color: var(--accent-color);
-}
-
-.service-details .services-list a:hover {
-  border-color: var(--accent-color);
-}
-
-.service-details .services-img {
-  margin-bottom: 20px;
-}
-
-.service-details h3 {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.service-details h4 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.service-details p {
-  font-size: 15px;
-}
-
-.service-details ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.service-details ul li {
-  padding: 5px 0;
-  display: flex;
-  align-items: center;
-}
-
-.service-details ul i {
-  font-size: 20px;
-  margin-right: 8px;
-  color: var(--accent-color);
 }
 
